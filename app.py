@@ -42,7 +42,8 @@ def handle_message(event):
     #    event.reply_token,
     #    TextSendMessage(text='輸入start>>開啟對話/輸入end>>結束對話'))
 
-#	msg = event.message.text
+	msg = event.message.text
+	reply = 'wooooo'
 #	if msg == 'start':
 #		reply = '你好,請輸入你的姓名'
 #	elif msg == 'end':
@@ -52,7 +53,7 @@ def handle_message(event):
 
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text=event.message.text))
+        TextSendMessage(text=reply))
 
 
 if __name__ == "__main__":
