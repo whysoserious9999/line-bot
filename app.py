@@ -38,9 +38,9 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-	line_bot_api.reply_message(
-        event.reply_token,
-        TextSendMessage(text='輸入start>>開啟對話/輸入end>>結束對話'))
+	#line_bot_api.reply_message(
+    #    event.reply_token,
+    #    TextSendMessage(text='輸入start>>開啟對話/輸入end>>結束對話'))
 
 	msg = event.message.text
 	if msg = 'start':
@@ -49,7 +49,7 @@ def handle_message(event):
 		reply='謝謝您使用本功能'
 	else:
 		reply='請重新輸入,謝謝'
-		
+
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=reply))
