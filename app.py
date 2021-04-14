@@ -44,7 +44,7 @@ def handle_message(event):
 
     msg = event.message.text
     if msg == 'start':
-        reply = '你好,請輸入你的姓名'
+        reply = '你好~~~~~~'
     elif msg == 'end':
         reply = '謝謝您使用本功能'
     else:
