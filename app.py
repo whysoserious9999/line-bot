@@ -43,13 +43,12 @@ def handle_message(event):
     #    TextSendMessage(text='輸入start>>開啟對話/輸入end>>結束對話'))
 
     msg = event.message.text
-    reply = 'wooooo'
-#    if msg == 'start':
-#        reply = '你好,請輸入你的姓名'
-#    elif msg == 'end':
-#        reply = '謝謝您使用本功能'
-#    else:
-#        reply = '請重新輸入,謝謝'
+    if msg == 'start':
+        reply = '你好,請輸入你的姓名'
+    elif msg == 'end':
+        reply = '謝謝您使用本功能'
+    else:
+        reply = '請重新輸入,謝謝'
 
     line_bot_api.reply_message(
         event.reply_token,
